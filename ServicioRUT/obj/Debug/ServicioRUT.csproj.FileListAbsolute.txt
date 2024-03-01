@@ -35,3 +35,40 @@ c:\users\gpg_kmorales\documents\visual studio 2017\Projects\PROCOMER.VUI.Haciend
 c:\users\gpg_kmorales\documents\visual studio 2017\Projects\PROCOMER.VUI.Hacienda\ServicioRUT\obj\Debug\ServicioRUT.dll
 c:\users\gpg_kmorales\documents\visual studio 2017\Projects\PROCOMER.VUI.Hacienda\ServicioRUT\obj\Debug\ServicioRUT.pdb
 c:\users\gpg_kmorales\documents\visual studio 2017\Projects\PROCOMER.VUI.Hacienda\ServicioRUT\obj\Debug\ServicioRUT.csprojResolveAssemblyReference.cache
+C:\Users\gpg_kmorales\Documents\GitHub\PROCOMER.VUI.Hacienda\ServicioRUT\bin\roslyn\csc.exe
+C:\Users\gpg_kmorales\Documents\GitHub\PROCOMER.VUI.Hacienda\ServicioRUT\bin\roslyn\csc.exe.config
+C:\Users\gpg_kmorales\Documents\GitHub\PROCOMER.VUI.Hacienda\ServicioRUT\bin\roslyn\csc.rsp
+C:\Users\gpg_kmorales\Documents\GitHub\PROCOMER.VUI.Hacienda\ServicioRUT\bin\roslyn\csi.exe
+C:\Users\gpg_kmorales\Documents\GitHub\PROCOMER.VUI.Hacienda\ServicioRUT\bin\roslyn\csi.rsp
+C:\Users\gpg_kmorales\Documents\GitHub\PROCOMER.VUI.Hacienda\ServicioRUT\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\gpg_kmorales\Documents\GitHub\PROCOMER.VUI.Hacienda\ServicioRUT\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\gpg_kmorales\Documents\GitHub\PROCOMER.VUI.Hacienda\ServicioRUT\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\gpg_kmorales\Documents\GitHub\PROCOMER.VUI.Hacienda\ServicioRUT\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\gpg_kmorales\Documents\GitHub\PROCOMER.VUI.Hacienda\ServicioRUT\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\gpg_kmorales\Documents\GitHub\PROCOMER.VUI.Hacienda\ServicioRUT\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\gpg_kmorales\Documents\GitHub\PROCOMER.VUI.Hacienda\ServicioRUT\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\gpg_kmorales\Documents\GitHub\PROCOMER.VUI.Hacienda\ServicioRUT\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\gpg_kmorales\Documents\GitHub\PROCOMER.VUI.Hacienda\ServicioRUT\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\gpg_kmorales\Documents\GitHub\PROCOMER.VUI.Hacienda\ServicioRUT\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\gpg_kmorales\Documents\GitHub\PROCOMER.VUI.Hacienda\ServicioRUT\bin\roslyn\System.AppContext.dll
+C:\Users\gpg_kmorales\Documents\GitHub\PROCOMER.VUI.Hacienda\ServicioRUT\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\gpg_kmorales\Documents\GitHub\PROCOMER.VUI.Hacienda\ServicioRUT\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\gpg_kmorales\Documents\GitHub\PROCOMER.VUI.Hacienda\ServicioRUT\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\gpg_kmorales\Documents\GitHub\PROCOMER.VUI.Hacienda\ServicioRUT\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\gpg_kmorales\Documents\GitHub\PROCOMER.VUI.Hacienda\ServicioRUT\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\gpg_kmorales\Documents\GitHub\PROCOMER.VUI.Hacienda\ServicioRUT\bin\roslyn\vbc.exe
+C:\Users\gpg_kmorales\Documents\GitHub\PROCOMER.VUI.Hacienda\ServicioRUT\bin\roslyn\vbc.exe.config
+C:\Users\gpg_kmorales\Documents\GitHub\PROCOMER.VUI.Hacienda\ServicioRUT\bin\roslyn\vbc.rsp
+C:\Users\gpg_kmorales\Documents\GitHub\PROCOMER.VUI.Hacienda\ServicioRUT\bin\roslyn\VBCSCompiler.exe
+C:\Users\gpg_kmorales\Documents\GitHub\PROCOMER.VUI.Hacienda\ServicioRUT\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\gpg_kmorales\Documents\GitHub\PROCOMER.VUI.Hacienda\ServicioRUT\bin\ServicioRUT.dll.config
+C:\Users\gpg_kmorales\Documents\GitHub\PROCOMER.VUI.Hacienda\ServicioRUT\bin\ServicioRUT.dll
+C:\Users\gpg_kmorales\Documents\GitHub\PROCOMER.VUI.Hacienda\ServicioRUT\bin\ServicioRUT.pdb
+C:\Users\gpg_kmorales\Documents\GitHub\PROCOMER.VUI.Hacienda\ServicioRUT\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\gpg_kmorales\Documents\GitHub\PROCOMER.VUI.Hacienda\ServicioRUT\bin\Newtonsoft.Json.dll
+C:\Users\gpg_kmorales\Documents\GitHub\PROCOMER.VUI.Hacienda\ServicioRUT\bin\PROCOMER.VUI.Conexion.dll
+C:\Users\gpg_kmorales\Documents\GitHub\PROCOMER.VUI.Hacienda\ServicioRUT\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\gpg_kmorales\Documents\GitHub\PROCOMER.VUI.Hacienda\ServicioRUT\bin\Newtonsoft.Json.xml
+C:\Users\gpg_kmorales\Documents\GitHub\PROCOMER.VUI.Hacienda\ServicioRUT\obj\Debug\ServicioRUT.dll
+C:\Users\gpg_kmorales\Documents\GitHub\PROCOMER.VUI.Hacienda\ServicioRUT\obj\Debug\ServicioRUT.pdb
+C:\Users\gpg_kmorales\Documents\GitHub\PROCOMER.VUI.Hacienda\ServicioRUT\obj\Debug\ServicioRUT.csprojResolveAssemblyReference.cache
