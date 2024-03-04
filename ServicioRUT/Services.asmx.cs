@@ -29,8 +29,10 @@ namespace ServicioRUT
             cls_Conexion objConexion = new cls_Conexion();
 
             WS_ServicesRUTPruebas.ProcomerReq Datos = new WS_ServicesRUTPruebas.ProcomerReq();// Almacena los datos par enviarlos al servicio
-            List<WS_ServicesRUTPruebas.ProcomerReq> DatosEmpresa = new List<WS_ServicesRUTPruebas.ProcomerReq>(); //Almacena en crudo los datos de la base de datos 
             string json = "";
+            string retorna = "";
+            string mensaje = "";
+
             try
             {
                 SqlDataReader dr;
@@ -39,11 +41,11 @@ namespace ServicioRUT
                 cmdTabla.Connection = objConexion.m_ObtenerConexionAmbiente();
                 cmdTabla.Parameters.Add("@RefBase", SqlDbType.NVarChar).Value = pm_RefBase;
                 dr = cmdTabla.ExecuteReader();
-                while (dr.Read())
+                while (dr.Read())//Lectura de los datos basandode en la consulta
                 {
-                    WS_ServicesRUTPruebas.ProcomerReq request2 = new WS_ServicesRUTPruebas.ProcomerReq()
+                    WS_ServicesRUTPruebas.ProcomerReq request = new WS_ServicesRUTPruebas.ProcomerReq()//instancia de objeto de la clase que viene en el servicio
                     {
-                        ActividadEconomica = new WS_ServicesRUTPruebas.ActividadEconomica()
+                        ActividadEconomica = new WS_ServicesRUTPruebas.ActividadEconomica()//subclase de servicio
                         {
                             CodigoActividad = dr["3_ActCodigoActividad"].ToString(),
                             NombreComercial = dr["3_Nombre comercial RUT"].ToString(),
@@ -57,7 +59,7 @@ namespace ServicioRUT
                             StrDistrito = dr["3_ActStrDistrito"].ToString(),
                             OtrasSenas = dr["3_ActOtrasSenas"].ToString()
                         },
-                        Apoderado = new WS_ServicesRUTPruebas.Apoderado()
+                        Apoderado = new WS_ServicesRUTPruebas.Apoderado()//subclase de servicio
                         {
                             NroIdentificacion = dr["3_ApdNroIdentificacion"].ToString(),
                             CodTipoClasePersona = dr["3_ApdCodTipoClasePersona"].ToString(),
@@ -74,7 +76,7 @@ namespace ServicioRUT
                             TelefonoMovil = dr["3_ApdTelefonoMovil"].ToString(),
                             FechaInicio = dr["3_ApdFechaInicio"].ToString()
                         },
-                        Persona = new WS_ServicesRUTPruebas.Persona()
+                        Persona = new WS_ServicesRUTPruebas.Persona()//subclase de servicio
                         {
                             NroIdentificacion = dr["3_PerNroIdentificacion"].ToString(),
                             CodTipoClasePersona = dr["3_PerCodTipoClasePersona"].ToString(),
@@ -91,7 +93,7 @@ namespace ServicioRUT
                             OtrasSenas = dr["3_PerOtrasSenas"].ToString(),
                             FechaCierre = dr["3_PersonaFechaCierre"].ToString()
                         },
-                        Representante = new WS_ServicesRUTPruebas.Representante
+                        Representante = new WS_ServicesRUTPruebas.Representante//subclase de servicio
                         {
                             NumIdentificacion = dr["3_RepNumIdentificacion"].ToString(),
                             CodTipoClasePersona = dr["3_RepCodTipoClasePersona"].ToString(),
@@ -109,19 +111,28 @@ namespace ServicioRUT
                             FechaInicio = dr["3_RepFechaInicio"].ToString(),
                         }
                     };
-                    Datos = request2;
+                    Datos = request;
                 }
-                json = JsonConvert.SerializeObject(Datos);
+                json = JsonConvert.SerializeObject(Datos);//serializacion de objeto a json
 
+                //se consulta al servicio para realizar la inscripcion en formato json
                 WS_ServicesRUTPruebas.IInscripcionRUT rut = new WS_ServicesRUTPruebas.InscripcionRUTClient();
                 rut.RealizaInscripcionJson(json);
-                //WS_ServicesRUTPruebas.ProcomerRes res = new WS_ServicesRUTPruebas.ProcomerRes();
+
+                //se realiza la inscripcion, en este campo utilizando el metodo RealizarInscripción
+                WS_ServicesRUTPruebas.ProcomerRes respuesta = new WS_ServicesRUTPruebas.ProcomerRes();
+                respuesta = rut.RealizaInscripcion(Datos);
+
+                //WS_ServicesRUTPruebas.IInscripcionRUT respuesta = new WS_ServicesRUTPruebas.InscripcionRUTClient();
+                //resp.RealizaInscripcion(Datos);
+
+                retorna = JsonConvert.SerializeObject(respuesta);
             }
             catch (Exception ex)
             {
 
             }
-            return json;
+            return retorna;
         }
 
     }
