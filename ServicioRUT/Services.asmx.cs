@@ -130,7 +130,7 @@ namespace ServicioRUT
             }
             catch (Exception ex)
             {
-
+                throw ex;
             }
             return retorna;
         }
