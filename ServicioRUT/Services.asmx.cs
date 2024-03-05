@@ -113,6 +113,7 @@ namespace ServicioRUT
                     };
                     Datos = request;
                 }
+                objConexion.m_ObtenerConexionAmbiente().Close();
                 json = JsonConvert.SerializeObject(Datos);//serializacion de objeto a json
 
                 //se consulta al servicio para realizar la inscripcion en formato json
