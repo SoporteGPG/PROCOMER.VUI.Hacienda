@@ -118,7 +118,7 @@ namespace ServicioRUT
 
                 //se consulta al servicio para realizar la inscripcion en formato json
                 WS_ServicesRUTPruebas.IInscripcionRUT rut = new WS_ServicesRUTPruebas.InscripcionRUTClient();
-                rut.RealizaInscripcionJson(json);
+                var respuestaJson = rut.RealizaInscripcionJson(json);
 
                 //se realiza la inscripcion, en este campo utilizando el metodo RealizarInscripción
                 WS_ServicesRUTPruebas.ProcomerRes respuesta = new WS_ServicesRUTPruebas.ProcomerRes();
