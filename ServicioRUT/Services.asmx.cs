@@ -25,7 +25,7 @@ namespace ServicioRUT
         cls_Token objToken = new cls_Token();
 
         [WebMethod]
-        public string RealizarInscripcionJson(string pm_RefBase, string pm_Usuario, string pm_Clave)
+        public string RealizarInscripcionJson(string pm_RefBase, string pm_Usuario, string pm_Pass, string pm_Ambiente)
         {
             SqlCommand cmdTabla = new SqlCommand();
             cls_Conexion objConexion = new cls_Conexion();
@@ -38,10 +38,10 @@ namespace ServicioRUT
             try
             {
 
-                string pm_Token = objToken.ObtenerToken(pm_Usuario, pm_Clave);
-                Boolean ValidarToken = objToken.ValidarToken(pm_Token);
+                string pm_Token = objToken.ObtenerToken(pm_Usuario, pm_Pass, pm_Ambiente);
+                string ValidarToken = objToken.ValidarToken(pm_Ambiente, pm_Token);
 
-                if (ValidarToken)
+                if (ValidarToken == "True")
                 {
                     SqlDataReader dr;
                     cmdTabla.CommandType = CommandType.StoredProcedure;
