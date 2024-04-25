@@ -137,6 +137,10 @@ namespace ServicioRUT
 
                     retorna = JsonConvert.SerializeObject(respuesta);
                 }
+                else
+                {
+                    retorna = "Error al validar Token:" + pm_Token;
+                }
             }
             catch (Exception ex)
             {
